@@ -2,7 +2,7 @@ const app = require('express')
 const server =  require('http').createServer(app)
 const io = require('socket.io')(server, {cors: {origin: process.env.URL_LINK}})
 
-//const PORT = 3001
+const PORT = 3001 || process.env.URL_LINK
 
 io.on('connection', socket => {
     console.log('Usuário conectado', socket.id)
