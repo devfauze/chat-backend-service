@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "18.x"
+    "node": "18.x",
+    "npm": "6.x"
   },
   "scripts": {
-    "build":"node index.js",
+    "start": "node index.js",
+    "build":"npm install && npm run compile",
     "dev": "nodemon index.js"
   },
   "keywords": [],
