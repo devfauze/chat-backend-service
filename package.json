@@ -7,8 +7,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "build":"tsc index.js",
-    "start":"node index.js",
+    "build":"node index.js",
     "dev": "nodemon index.js"
   },
   "keywords": [],
